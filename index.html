@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hubakaghayati — musik, lagu, dan cerita dari ruang hati.">
+  <meta name="author" content="Hubakaghayati">
+  <title>Hubakaghayati — Music</title>
+  <style>
+    :root{
+      --bg:#0d0d0f;
+      --bg2:#151518;
+      --text:#f5f2eb;
+      --muted:#aaa6a0;
+      --line:rgba(255,255,255,.12);
+      --accent:#d8b477;
+      --accent2:#f0d6a5;
+      --max:1050px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:
+        radial-gradient(circle at 80% 10%, rgba(216,180,119,.12), transparent 32%),
+        linear-gradient(180deg,#101012 0%,#0b0b0d 100%);
+      color:var(--text);
+      font-family:Georgia,"Times New Roman",serif;
+      line-height:1.7;
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(92%,var(--max));margin:auto}
+    nav{
+      position:sticky;top:0;z-index:10;
+      backdrop-filter:blur(14px);
+      background:rgba(13,13,15,.78);
+      border-bottom:1px solid var(--line);
+    }
+    .navin{
+      min-height:68px;display:flex;align-items:center;justify-content:space-between;
+    }
+    .brand{
+      font-family:Arial,Helvetica,sans-serif;
+      font-weight:700;letter-spacing:2px;font-size:18px;
+    }
+    .links{display:flex;gap:24px;font-family:Arial,Helvetica,sans-serif;font-size:13px}
+    .links a{color:#d7d3cc}
+    .links a:hover{color:var(--accent2)}
+    .hero{min-height:76vh;display:grid;place-items:center;text-align:center;padding:80px 0 60px}
+    .eyebrow{
+      color:var(--accent2);font-family:Arial,Helvetica,sans-serif;
+      text-transform:uppercase;letter-spacing:4px;font-size:11px;
+    }
+    h1{
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:clamp(42px,8vw,88px);
+      letter-spacing:-4px;line-height:.95;margin:18px 0;
+    }
+    .tagline{font-size:clamp(18px,3vw,27px);color:#ddd7ce;max-width:700px;margin:0 auto 20px}
+    .intro{max-width:650px;margin:auto;color:var(--muted);font-size:16px}
+    .btns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .btn{
+      border:1px solid var(--line);padding:11px 20px;border-radius:999px;
+      font-family:Arial,Helvetica,sans-serif;font-size:13px;
+      transition:.2s;background:rgba(255,255,255,.03)
+    }
+    .btn.primary{background:var(--accent);border-color:var(--accent);color:#17130d;font-weight:700}
+    .btn:hover{transform:translateY(-2px);border-color:var(--accent)}
+    section{padding:78px 0;border-top:1px solid var(--line)}
+    .section-title{
+      font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;
+      letter-spacing:3px;font-size:12px;color:var(--accent2);margin-bottom:28px
+    }
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+    h2{font-family:Arial,Helvetica,sans-serif;font-size:clamp(30px,5vw,48px);line-height:1.1;margin:0 0 18px}
+    .quote{
+      font-size:25px;line-height:1.45;color:#e8e1d6;
+      border-left:2px solid var(--accent);padding-left:24px
+    }
+    .music-card{
+      border:1px solid var(--line);border-radius:18px;padding:28px;
+      background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.015));
+    }
+    .music-card h3{font-family:Arial,Helvetica,sans-serif;margin:0 0 8px;font-size:24px}
+    .music-card p{color:var(--muted);margin-top:0}
+    .platforms{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}
+    .platform{
+      padding:14px 16px;border:1px solid var(--line);border-radius:12px;
+      font-family:Arial,Helvetica,sans-serif;font-size:13px
+    }
+    .platform:hover{border-color:var(--accent);color:var(--accent2)}
+    .contact{text-align:center}
+    .email{
+      display:inline-block;margin-top:12px;color:var(--accent2);
+      font-family:Arial,Helvetica,sans-serif;font-size:16px
+    }
+    footer{padding:32px 0 45px;text-align:center;color:#777;font-family:Arial,Helvetica,sans-serif;font-size:12px}
+    @media(max-width:700px){
+      .links{gap:12px}.links a:nth-child(2){display:none}
+      .about{grid-template-columns:1fr;gap:30px}
+      .platforms{grid-template-columns:1fr}
+      h1{letter-spacing:-2px}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap navin">
+      <a class="brand" href="#top">HUBAKAGHAYATI</a>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#music">Music</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero" style="border-top:0">
+      <div class="wrap">
+        <div class="eyebrow">Music • Reflection • Life</div>
+        <h1>Hubakaghayati</h1>
+        <p class="tagline">Music is a mirror of a beautiful, harmonious life.</p>
+        <p class="intro">
+          Ada suara yang menyimpan hasratku.<br>
+          Ada denting di emosiku.<br>
+          Ada melodi di mimpiku.<br>
+          Ada harmoni dalam hidupku.
+        </p>
+        <div class="btns">
+          <a class="btn primary" href="#music">Listen to my music</a>
+          <a class="btn" href="#about">About Hubakaghayati</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap about">
+        <div>
+          <div class="section-title">About</div>
+          <h2>Musik dari ruang hati.</h2>
+          <p>
+            Assalamu'alaikum.<br>
+            Salam sejahtera bagi kita semua.<br>
+            Semoga kita semua senantiasa berada dalam kebaikan.
+          </p>
+          <p>
+            Hubakaghayati adalah nama artistik untuk karya-karya musik yang
+            lahir dari perenungan tentang kehidupan, manusia, cinta, waktu,
+            dan perjalanan hati.
+          </p>
+        </div>
+        <div class="quote">
+          “Musik adalah sebuah cermin gambaran kehidupan indah yang harmoni.”
+        </div>
+      </div>
+    </section>
+
+    <section id="music">
+      <div class="wrap">
+        <div class="section-title">Latest release</div>
+        <div class="music-card">
+          <h3>Are We Still Human</h3>
+          <p>Single • 2026 • Hubakaghayati</p>
+          <p>
+            Sebuah lagu tentang manusia, kemanusiaan, dan pertanyaan
+            yang mungkin perlu kita tanyakan kembali kepada diri sendiri.
+          </p>
+          <div class="platforms">
+            <a class="platform" href="https://open.spotify.com/artist/2oNWi471uZxQkbvE1V2HDN" target="_blank" rel="noopener">Spotify ↗</a>
+            <a class="platform" href="https://music.apple.com/" target="_blank" rel="noopener">Apple Music ↗</a>
+            <a class="platform" href="https://music.youtube.com/" target="_blank" rel="noopener">YouTube Music ↗</a>
+            <a class="platform" href="https://www.youtube.com/@hubakaghayati" target="_blank" rel="noopener">YouTube ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap contact">
+        <div class="section-title">Contact</div>
+        <h2>Let's stay connected.</h2>
+        <p style="color:var(--muted)">
+          Untuk informasi, kolaborasi, atau sekadar menyapa:
+        </p>
+        <a class="email" href="mailto:hubakaghayatischannel@gmail.com">hubakaghayatischannel@gmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Hubakaghayati. Music, reflection, and life.
+  </footer>
+</body>
+</html>
