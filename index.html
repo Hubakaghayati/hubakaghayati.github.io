@@ -7,7 +7,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-LZLYYM7130');
 </script>
   <meta charset="UTF-8">
@@ -56,7 +55,7 @@
     .links{display:flex;gap:24px;font-family:Arial,Helvetica,sans-serif;font-size:13px}
     .links a{color:#d7d3cc}
     .links a:hover{color:var(--accent2)}
-    .hero{min-height:76vh;display:block;text-align:center;padding:0 0 60px}
+    .hero{min-height:76vh;display:grid;place-items:center;text-align:center;padding:80px 0 60px}
     .eyebrow{
       color:var(--accent2);font-family:Arial,Helvetica,sans-serif;
       text-transform:uppercase;letter-spacing:4px;font-size:11px;
@@ -107,7 +106,7 @@
     }
     footer{padding:32px 0 45px;text-align:center;color:#777;font-family:Arial,Helvetica,sans-serif;font-size:12px}
     @media(max-width:700px){
-      .links{gap:12px}.links a:nth-child(2){display:none}
+      .links{gap:12px}
       .about{grid-template-columns:1fr;gap:30px}
       .platforms{grid-template-columns:1fr}
       h1{letter-spacing:-2px}
@@ -115,7 +114,7 @@
   </style>
 </head>
 <body>
-  
+
   <nav>
     <div class="wrap navin">
       <a class="brand" href="#top">HUBAKAGHAYATI</a>
@@ -131,8 +130,8 @@
   <main id="top">
     <section class="hero" style="border-top:0">
       <img src="Hubakaghayati%20Song%20Of%20Reflection.png"
-     alt="Hubakaghayati"
-     style="width:100%; max-height:520px; object-fit:cover; display:block; margin:0 auto 35px; border-radius:12px;">
+           alt="Hubakaghayati"
+           style="width:100%; max-height:520px; object-fit:cover; display:block; margin:0 auto 35px; border-radius:12px;">
       <div class="wrap">
         <div class="eyebrow">Reflection • Humanity • Hope • Life • Love</div>
         <h1>Hubakaghayati</h1>
@@ -163,7 +162,7 @@
           <p>
             Hubakaghayati adalah nama artistik untuk karya-karya musik yang
             lahir dari perenungan tentang kehidupan, kemanusiaan, cinta,
-            harapan, dan perjalanan hati. 
+            harapan, dan perjalanan hati.
           </p>
           <p class="signature">Every step has a story.</p>
         </div>
@@ -174,50 +173,46 @@
     </section>
 
     <section id="music">
-  <div class="wrap">
+      <div class="wrap">
+        <div class="section-title">New Release</div>
+        <div class="music-card">
+          <h3>A Sip of Water</h3>
+          <p>Single • 2026 • Hubakaghayati</p>
+          <p>
+            A song about compassion, humanity, and the simple act of giving.
+          </p>
+          <p>
+            Sometimes, a small act of kindness can carry a meaning far greater than we imagine.
+            Inspired by the story of a thirsty dog who received water from a compassionate human being —
+            a reminder that kindness belongs to every living creature.
+          </p>
+          <p style="margin-top:18px;">
+            <strong>💧 100 Tetes — One Small Act, One Meaningful Difference.</strong>
+          </p>
+          <p style="margin-top:18px;">
+            <a href="100-tetes-kecil.html" style="color:#d8b36a; text-decoration:none; font-family:Arial,Helvetica,sans-serif; font-size:14px;">
+              The Story ↗
+            </a>
+          </p>
+          <div class="platforms">
+            <a class="platform" href="https://open.spotify.com/album/37aaMkPEaw42cZch7akcLl" target="_blank" rel="noopener">Spotify ↗</a>
+            <a class="platform" href="https://www.youtube.com/watch?v=E5z4yj1LEpI&amp;list=OLAK5uy_lI1tzzDRaDzpsbatTQrv6i208UYdXDuKU&amp;index=1" target="_blank" rel="noopener">YouTube Music ↗</a>
+            <a class="platform" href="https://www.youtube.com/@hubakaghayati" target="_blank" rel="noopener">YouTube ↗</a>
+          </div>
+        </div>
 
-    <div class="section-title">New Release</div>
-
-    <div class="music-card">
-      <h3>Rumah Cerita : Lagu-Lagu Untukmu</h3>
-      <p>Single • 2026 • Hubakaghayati</p>
-
-      <p>
-        Sebuah lagu tentang waktu, suara yang suatu hari mungkin tak lagi terdengar,
-        dan tentang cinta serta cerita yang tetap hidup melalui lagu.
-      </p>
-
-<p style="margin-top:18px;">
-  <a href="lagu-lagu-untukmu.html" style="color:#d8b36a; text-decoration:none; font-family:Arial,Helvetica,sans-serif; font-size:14px;">
-        The Story ↗
-  </a>
-</p>
-
-      <div class="platforms">
-        <a class="platform" href="https://open.spotify.com/album/6qDu7tyZJN4ey2XkGS9SY" target="_blank" rel="noopener">Spotify ↗</a>
-        <a class="platform" href="https://music.apple.com/us/album/lagu-lagu-untukmu-single/685010830" target="_blank" rel="noopener">Apple Music ↗</a>
-        <a class="platform" href="https://music.youtube.com/" target="_blank" rel="noopener">YouTube Music ↗</a>
-        <a class="platform" href="https://www.youtube.com/@hubakaghayati" target="_blank" rel="noopener">YouTube ↗</a>
+        <div style="margin-top:55px;">
+          <div class="section-title">Previous Releases</div>
+          <div style="display:flex; flex-direction:column; gap:14px;">
+            <a href="are-we-still-human.html"
+               style="display:block; padding:16px 18px; border:1px solid var(--line); border-radius:12px; font-family:Arial,Helvetica,sans-serif; font-size:15px;">
+              Are We Still Human ↗
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div style="margin-top:55px;">
-      <div class="section-title">Previous Releases</div>
-
-      <div style="display:flex; flex-direction:column; gap:14px;">
-
-        <a href="are-we-still-human.html"
-           style="display:block; padding:16px 18px; border:1px solid var(--line); border-radius:12px; font-family:Arial,Helvetica,sans-serif; font-size:15px;">
-          Are We Still Human ↗
-        </a>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-    
-   
     <section id="contact">
       <div class="wrap contact">
         <div class="section-title">Contact</div>
