@@ -134,12 +134,27 @@
       font-family:Arial,Helvetica,sans-serif;font-size:16px
     }
     footer{padding:32px 0 45px;text-align:center;color:#777;font-family:Arial,Helvetica,sans-serif;font-size:12px}
-    @media(max-width:700px){
-      .links{gap:12px}
-      .about{grid-template-columns:1fr;gap:30px}
-      .platforms{grid-template-columns:1fr}
-      h1{letter-spacing:-2px}
-    }
+  @media (max-width:720px) {
+  .navin{
+    flex-wrap:wrap;
+    gap:12px;
+  }
+
+  .brand{
+    font-size:16px;
+    letter-spacing:1px;
+  }
+
+  .links{
+    gap:12px;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+  }
+
+  .about{grid-template-columns:1fr;gap:30px}
+  .platforms{grid-template-columns:1fr}
+  h1{letter-spacing:-2px}
+}
   </style>
 </head>
 <body>
