@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZLYYM7130"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-LZLYYM7130');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZLYYM7130"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LZLYYM7130');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Hubakaghayati — musik, lagu, dan cerita dari ruang hati.">
   <meta name="author" content="Hubakaghayati">
-  <meta name="google-site-verification" content="4VU4gNYETKsDky49KcGYnv5bVYiocAryaj8kAWlQZas" />
+  <meta name="google-site-verification" content="4VU4gNYETKsDky49KcGYnv5bVYiocAryaj8kAWlQZas">
   <title>Hubakaghayati — Music</title>
+
   <style>
     :root{
       --bg:#0d0d0f;
@@ -39,6 +41,7 @@
     }
     a{color:inherit;text-decoration:none}
     .wrap{width:min(92%,var(--max));margin:auto}
+
     nav{
       position:sticky;top:0;z-index:10;
       backdrop-filter:blur(14px);
@@ -46,119 +49,220 @@
       border-bottom:1px solid var(--line);
     }
     .navin{
-      min-height:68px;display:flex;align-items:center;justify-content:space-between;
+      min-height:68px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
     }
     .brand{
       font-family:Arial,Helvetica,sans-serif;
-      font-weight:700;letter-spacing:2px;font-size:18px;
+      font-weight:700;
+      letter-spacing:2px;
+      font-size:18px;
     }
-    .links{display:flex;gap:24px;font-family:Arial,Helvetica,sans-serif;font-size:13px}
+    .links{
+      display:flex;
+      gap:24px;
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:13px;
+    }
     .links a{color:#d7d3cc}
     .links a:hover{color:var(--accent2)}
-    .hero{min-height:76vh;display:grid;place-items:center;text-align:center;padding:80px 0 60px}
+
+    .hero{
+      min-height:76vh;
+      display:grid;
+      place-items:center;
+      text-align:center;
+      padding:80px 0 60px;
+    }
     .eyebrow{
-      color:var(--accent2);font-family:Arial,Helvetica,sans-serif;
-      text-transform:uppercase;letter-spacing:4px;font-size:11px;
+      color:var(--accent2);
+      font-family:Arial,Helvetica,sans-serif;
+      text-transform:uppercase;
+      letter-spacing:4px;
+      font-size:11px;
     }
     h1{
       font-family:Arial,Helvetica,sans-serif;
       font-size:clamp(42px,8vw,88px);
-      letter-spacing:-4px;line-height:.95;margin:18px 0;
+      letter-spacing:-4px;
+      line-height:.95;
+      margin:18px 0;
     }
-    .tagline{font-size:clamp(18px,3vw,27px);color:#ddd7ce;max-width:700px;margin:0 auto 20px}
-    .intro{max-width:650px;margin:auto;color:var(--muted);font-size:16px}
-    .signature{margin-top:24px;color:var(--accent);font-style:italic;font-size:18px;letter-spacing:.5px}
-    .btns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}
-    .btn{
-      border:1px solid var(--line);padding:11px 20px;border-radius:999px;
-      font-family:Arial,Helvetica,sans-serif;font-size:13px;
-      transition:.2s;background:rgba(255,255,255,.03)
+    .tagline{
+      font-size:clamp(18px,3vw,27px);
+      color:#ddd7ce;
+      max-width:700px;
+      margin:0 auto 20px;
     }
-    .btn.primary{background:var(--accent);border-color:var(--accent);color:#17130d;font-weight:700}
-    .btn:hover{transform:translateY(-2px);border-color:var(--accent)}
-    section{padding:78px 0;border-top:1px solid var(--line)}
-    .section-title{
-      font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;
-      letter-spacing:3px;font-size:12px;color:var(--accent2);margin-bottom:28px
-    }
-    .about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
-    h2{font-family:Arial,Helvetica,sans-serif;font-size:clamp(30px,5vw,48px);line-height:1.1;margin:0 0 18px}
-    .quote{
-      font-size:25px;line-height:1.45;color:#e8e1d6;
-      border-left:2px solid var(--accent);padding-left:24px
-    }
-    .music-card{
-      border:1px solid var(--line);border-radius:18px;padding:28px;
-      background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.015));
-    }
-        .coming-soon-card{
-      border:1px solid var(--line);
-      border-radius:18px;
-      padding:28px;
-      margin-bottom:55px;
-      background:
-        linear-gradient(145deg,rgba(216,180,119,.10),rgba(255,255,255,.02));
-      text-align:center;
-    }
-
-    .coming-soon-card h3{
-      font-family:Arial,Helvetica,sans-serif;
-      margin:0 0 8px;
-      font-size:28px;
-    }
-
-    .coming-soon-card p{
+    .intro{
+      max-width:650px;
+      margin:auto;
       color:var(--muted);
-      margin:0 0 20px;
+      font-size:16px;
+    }
+    .signature{
+      margin-top:24px;
+      color:var(--accent);
+      font-style:italic;
+      font-size:18px;
+      letter-spacing:.5px;
     }
 
-    .coming-soon-label{
-      color:var(--accent2);
+    .btns{
+      display:flex;
+      justify-content:center;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:30px;
+    }
+    .btn{
+      border:1px solid var(--line);
+      padding:11px 20px;
+      border-radius:999px;
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:13px;
+      transition:.2s;
+      background:rgba(255,255,255,.03);
+    }
+    .btn.primary{
+      background:var(--accent);
+      border-color:var(--accent);
+      color:#17130d;
+      font-weight:700;
+    }
+    .btn:hover{
+      transform:translateY(-2px);
+      border-color:var(--accent);
+    }
+
+    section{
+      padding:78px 0;
+      border-top:1px solid var(--line);
+    }
+    .section-title{
       font-family:Arial,Helvetica,sans-serif;
       text-transform:uppercase;
       letter-spacing:3px;
-      font-size:11px;
-      margin-bottom:12px;
+      font-size:12px;
+      color:var(--accent2);
+      margin-bottom:28px;
     }
-    .music-card h3{font-family:Arial,Helvetica,sans-serif;margin:0 0 8px;font-size:24px}
-    .music-card p{color:var(--muted);margin-top:0}
-    .platforms{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}
+    .about{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+      align-items:start;
+    }
+    h2{
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:clamp(30px,5vw,48px);
+      line-height:1.1;
+      margin:0 0 18px;
+    }
+    .quote{
+      font-size:25px;
+      line-height:1.45;
+      color:#e8e1d6;
+      border-left:2px solid var(--accent);
+      padding-left:24px;
+    }
+
+    .music-card{
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:28px;
+      background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.015));
+    }
+    .music-card h3{
+      font-family:Arial,Helvetica,sans-serif;
+      margin:0 0 8px;
+      font-size:24px;
+    }
+    .music-card p{
+      color:var(--muted);
+      margin-top:0;
+    }
+
+    .project-card{
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:28px;
+      margin-top:55px;
+      background:linear-gradient(145deg,rgba(216,180,119,.08),rgba(255,255,255,.02));
+    }
+    .project-card h3{
+      font-family:Arial,Helvetica,sans-serif;
+      margin:0 0 8px;
+      font-size:24px;
+    }
+    .project-card p{
+      color:var(--muted);
+      margin-top:0;
+    }
+
+    .platforms{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:12px;
+      margin-top:22px;
+    }
     .platform{
-      padding:14px 16px;border:1px solid var(--line);border-radius:12px;
-      font-family:Arial,Helvetica,sans-serif;font-size:13px
+      padding:14px 16px;
+      border:1px solid var(--line);
+      border-radius:12px;
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:13px;
     }
-    .platform:hover{border-color:var(--accent);color:var(--accent2)}
+    .platform:hover{
+      border-color:var(--accent);
+      color:var(--accent2);
+    }
+
     .contact{text-align:center}
     .email{
-      display:inline-block;margin-top:12px;color:var(--accent2);
-      font-family:Arial,Helvetica,sans-serif;font-size:16px
+      display:inline-block;
+      margin-top:12px;
+      color:var(--accent2);
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:16px;
     }
-    footer{padding:32px 0 45px;text-align:center;color:#777;font-family:Arial,Helvetica,sans-serif;font-size:12px}
-  @media (max-width:720px) {
-  .navin{
-    flex-wrap:wrap;
-    gap:12px;
-  }
+    footer{
+      padding:32px 0 45px;
+      text-align:center;
+      color:#777;
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:12px;
+    }
 
-  .brand{
-    font-size:16px;
-    letter-spacing:1px;
-  }
-
-  .links{
-    gap:12px;
-    flex-wrap:wrap;
-    justify-content:flex-start;
-  }
-
-  .about{grid-template-columns:1fr;gap:30px}
-  .platforms{grid-template-columns:1fr}
-  h1{letter-spacing:-2px}
-}
+    @media (max-width:720px){
+      .navin{
+        flex-wrap:wrap;
+        gap:12px;
+      }
+      .brand{
+        font-size:16px;
+        letter-spacing:1px;
+      }
+      .links{
+        gap:12px;
+        flex-wrap:wrap;
+        justify-content:flex-start;
+      }
+      .about{
+        grid-template-columns:1fr;
+        gap:30px;
+      }
+      .platforms{
+        grid-template-columns:1fr;
+      }
+      h1{letter-spacing:-2px}
+    }
   </style>
 </head>
-<body>
 
+<body>
   <nav>
     <div class="wrap navin">
       <a class="brand" href="#top">HUBAKAGHAYATI</a>
@@ -172,22 +276,29 @@
   </nav>
 
   <main id="top">
+
     <section class="hero" style="border-top:0">
       <img src="Hubakaghayati%20Song%20Of%20Reflection.png"
            alt="Hubakaghayati"
            style="width:100%; max-height:520px; object-fit:cover; display:block; margin:0 auto 35px; border-radius:12px;">
+
       <div class="wrap">
         <div class="eyebrow">Reflection • Humanity • Hope • Life • Love</div>
         <h1>Hubakaghayati</h1>
-        <p class="tagline" style="font-size:1.6rem; margin-top:0.3rem; margin-bottom:0.8rem;">Rumah Cerita</p>
-        <p class="tagline">Songs born from life, reflection, humanity, hope and love.</p>
+        <p class="tagline" style="font-size:1.6rem; margin-top:0.3rem; margin-bottom:0.8rem;">
+          Rumah Cerita
+        </p>
+        <p class="tagline">
+          Songs born from life, reflection, humanity, hope and love.
+        </p>
         <p class="intro">
           Hubakaghayati is a musical journey through life — songs of reflection,
           humanity, hope and love. Each song carries a story, a feeling, or a
           question that life has left behind.
         </p>
+
         <div class="btns">
-         <a class="btn" href="#music">Listen to my music</a>
+          <a class="btn" href="#music">Listen to my music</a>
           <a class="btn" href="#about">About Hubakaghayati</a>
         </div>
       </div>
@@ -198,18 +309,22 @@
         <div>
           <div class="section-title">About</div>
           <h2>Musik dari ruang hati.</h2>
+
           <p>
             Salam cinta untukmu.<br>
             Salam sejahtera bagi kita semua.<br>
             Semoga kita semua senantiasa berada dalam kebaikan.
           </p>
+
           <p>
             Hubakaghayati adalah nama artistik untuk karya-karya musik yang
             lahir dari perenungan tentang kehidupan, kemanusiaan, cinta,
             harapan, dan perjalanan hati.
           </p>
+
           <p class="signature">Every step has a story.</p>
         </div>
+
         <div class="quote">
           “Musik adalah sebuah cermin gambaran kehidupan indah yang harmoni.”
         </div>
@@ -218,58 +333,87 @@
 
     <section id="music">
       <div class="wrap">
+
         <div class="section-title">New Release</div>
+
         <div class="music-card">
-          <h3>A Sip of Water</h3>
+          <h3>Rumah Cerita</h3>
           <p>Single • 2026 • Hubakaghayati</p>
+
           <p>
-            A song about compassion, humanity, and the simple act of giving.
+            Sebuah lagu tentang perjalanan, kenangan, manusia yang pernah datang,
+            dan cerita yang tetap tinggal di dalam hati.
           </p>
-          <p>
-            Sometimes, a small act of kindness can carry a meaning far greater than we imagine.
-            Inspired by the story of a thirsty dog who received water from a compassionate human being —
-            a reminder that kindness belongs to every living creature.
-          </p>
+
           <p style="margin-top:18px;">
-            <strong>💧 100 Tetes — One Small Act, One Meaningful Difference.</strong>
-          </p>
-          <p style="margin-top:18px;">
-            <a href="100-tetes-kecil.html" style="color:#d8b36a; text-decoration:none; font-family:Arial,Helvetica,sans-serif; font-size:14px;">
+            <a href="rumah-cerita.html"
+               style="color:#d8b36a; text-decoration:none; font-family:Arial,Helvetica,sans-serif; font-size:14px;">
               The Story ↗
             </a>
           </p>
+
           <div class="platforms">
-            <a class="platform" href="https://open.spotify.com/album/37aaMkPEaw42cZch7akcLl" target="_blank" rel="noopener">Spotify ↗</a>
-            <a class="platform" href="https://www.youtube.com/watch?v=E5z4yj1LEpI&amp;list=OLAK5uy_lI1tzzDRaDzpsbatTQrv6i208UYdXDuKU&amp;index=1" target="_blank" rel="noopener">YouTube Music ↗</a>
-            <a class="platform" href="https://www.youtube.com/@hubakaghayati" target="_blank" rel="noopener">YouTube ↗</a>
+            <a class="platform"
+               href="https://open.spotify.com/album/762ePf3jOvDNZzgUZqXKb"
+               target="_blank" rel="noopener">
+              Spotify ↗
+            </a>
+
+            <a class="platform"
+               href="https://music.apple.com/us/song/rumah-cerita/6814135927"
+               target="_blank" rel="noopener">
+              Apple Music ↗
+            </a>
+
+            <a class="platform"
+               href="https://music.youtube.com/"
+               target="_blank" rel="noopener">
+              YouTube Music ↗
+            </a>
+
+            <a class="platform"
+               href="https://www.youtube.com/@hubakaghayati"
+               target="_blank" rel="noopener">
+              YouTube ↗
+            </a>
           </div>
         </div>
-<div class="coming-soon-card">
-  <div class="coming-soon-label">Coming Soon</div>
 
-  <h3>New Music Is Coming</h3>
+        <div class="project-card">
+          <div class="section-title">100 Tetes Kecil</div>
+          <h3>100 Small Drops for Peace</h3>
 
-  <p>
-    A new song is quietly taking shape...
-  </p>
+          <p>
+            One human being. One song. One small message of peace —
+            from Indonesia to people in different parts of the world.
+          </p>
 
-  <a class="btn" href="rumah-cerita.html">
-    Enter Rumah Cerita ↗
-  </a>
-</div>     
-       <div style="margin-top:55px;">
+          <p style="margin-top:18px;">
+            <a href="100-tetes-kecil.html"
+               style="color:#d8b36a; text-decoration:none; font-family:Arial,Helvetica,sans-serif; font-size:14px;">
+              Enter 100 Tetes Kecil ↗
+            </a>
+          </p>
+        </div>
+
+        <div style="margin-top:55px;">
           <div class="section-title">Previous Releases</div>
+
           <div style="display:flex; flex-direction:column; gap:14px;">
+
             <a href="are-we-still-human.html"
                style="display:block; padding:16px 18px; border:1px solid var(--line); border-radius:12px; font-family:Arial,Helvetica,sans-serif; font-size:15px;">
               Are We Still Human ↗
             </a>
-                <a href="lagu-lagu-untukmu.html"
-       style="display:block; padding:16px 18px; border:1px solid var(--line); border-radius:12px; font-family:Arial,Helvetica,sans-serif; font-size:15px;">
-      Rumah Cerita : Lagu-Lagu Untukmu ↗
-    </a>
+
+            <a href="lagu-lagu-untukmu.html"
+               style="display:block; padding:16px 18px; border:1px solid var(--line); border-radius:12px; font-family:Arial,Helvetica,sans-serif; font-size:15px;">
+              Lagu-Lagu Untukmu ↗
+            </a>
+
           </div>
         </div>
+
       </div>
     </section>
 
@@ -277,12 +421,17 @@
       <div class="wrap contact">
         <div class="section-title">Contact</div>
         <h2>Let's stay connected.</h2>
+
         <p style="color:var(--muted)">
           Untuk informasi, kolaborasi, atau sekadar menyapa:
         </p>
-        <a class="email" href="mailto:hubakaghayatichannel@gmail.com">hubakaghayatichannel@gmail.com</a>
+
+        <a class="email" href="mailto:hubakaghayatichannel@gmail.com">
+          hubakaghayatichannel@gmail.com
+        </a>
       </div>
     </section>
+
   </main>
 
   <footer>
